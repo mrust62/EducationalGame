@@ -31,6 +31,8 @@ public class Manager : MonoBehaviour
     string clickedButton = "";
     string clickedButton2 = "";
 
+
+    //Checks if the elewment matches the atomic Symbol
     public void correctMatch()
     {
 
