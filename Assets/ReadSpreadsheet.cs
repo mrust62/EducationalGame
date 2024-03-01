@@ -43,20 +43,19 @@ public class ReadSpreadsheet : MonoBehaviour
         {
             if (data.GetValue(i).Equals(random1.ToString()))
             {
-                Debug.Log(random1 + " " + data.GetValue(i + 2));
+                Debug.Log(random1 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
             } 
             else if (data.GetValue(i).Equals(random2.ToString()))
             {
-                Debug.Log(random2 + " " + data.GetValue(i + 2));
-                
+                Debug.Log(random2 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
             } 
             else if (data.GetValue(i).Equals(random3.ToString()))
             {
-                Debug.Log(random3 + " " + data.GetValue(i + 2));
+                Debug.Log(random3 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
             }
             else if (data.GetValue(i).Equals(random4.ToString()))
             {
-                Debug.Log(random4 + " " + data.GetValue(i + 2));
+                Debug.Log(random4 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
             }
         }
 
