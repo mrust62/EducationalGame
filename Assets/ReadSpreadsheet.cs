@@ -16,7 +16,7 @@ public class ReadSpreadsheet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        getElements();
     }
 
     // Update is called once per frame
@@ -41,22 +41,22 @@ public class ReadSpreadsheet : MonoBehaviour
        
         for (int i = 0; i < data.Length; i++)
         {
-            if (i == random1)
+            if (data.GetValue(i).Equals(random1.ToString()))
             {
-                Debug.Log(random1);
+                Debug.Log(random1 + " " + data.GetValue(i + 2));
             } 
-            else if (i == random2)
+            else if (data.GetValue(i).Equals(random2.ToString()))
             {
-                Debug.Log(random2);
+                Debug.Log(random2 + " " + data.GetValue(i + 2));
                 
             } 
-            else if (i == random3)
+            else if (data.GetValue(i).Equals(random3.ToString()))
             {
-                Debug.Log(random3);
+                Debug.Log(random3 + " " + data.GetValue(i + 2));
             }
-            else if (i == random4)
+            else if (data.GetValue(i).Equals(random4.ToString()))
             {
-                Debug.Log(random4);
+                Debug.Log(random4 + " " + data.GetValue(i + 2));
             }
         }
 
