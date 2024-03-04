@@ -39,7 +39,7 @@ public class ReadSpreadsheet : MonoBehaviour
         //int random = Random.Range(1, 118);
 
        
-        for (int i = 0; i < data.Length; i++)
+        for (int i = 0; i < data.Length; i+=5)
         {
             if (data.GetValue(i).Equals(random1.ToString()))
             {
