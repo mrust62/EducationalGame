@@ -37,12 +37,23 @@ public class ReadSpreadsheet : MonoBehaviour
     {
         string[] data = textAssetdata.text.Split(new string[] { ",", "\n" }, System.StringSplitOptions.None);
 
+        //randomize the elements chosen
         int random1 = Random.Range(1, 118);
         int random2 = Random.Range(1, 118);
         int random3 = Random.Range(1, 118);
         int random4 = Random.Range(1, 118);
+        
+        //to prevent duplicate numbers/elements from appearing
+        while (random1 == random2 || random1 == random3 || random1 == random4 || random2 == random3 || random2 == random4 || random3 == random4)
+        {
+            random1 = Random.Range(1, 118);
+            random2 = Random.Range(1, 118);
+            random3 = Random.Range(1, 118);
+            random4 = Random.Range(1, 118);
+            Debug.Log("RESET");
+        }
 
-       
+        //sets the buttons and text to the correct values
         for (int i = 0; i < data.Length; i+=5)
         {
             if (data.GetValue(i).Equals(random1.ToString()))
@@ -70,7 +81,6 @@ public class ReadSpreadsheet : MonoBehaviour
                 Symbol4.text = data.GetValue(i + 1).ToString();
             }
         }
-
 
     }
 
