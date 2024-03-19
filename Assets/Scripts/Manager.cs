@@ -10,6 +10,15 @@ public class Manager : MonoBehaviour
 
     int currentLevel;
 
+    public Button element1;
+    public Button symbol1;
+    public Button element2;
+    public Button symbol2;
+    public Button element3;
+    public Button symbol3;
+    public Button element4;
+    public Button symbol4;
+
     public void correctAnswer()
     {
         if (currentLevel + 1 != Levels.Length)
@@ -30,7 +39,7 @@ public class Manager : MonoBehaviour
 
     string clickedButton = "";
     string clickedButton2 = "";
-
+    
 
     //Checks if the elewment matches the atomic Symbol
     public void correctMatch()
@@ -38,33 +47,33 @@ public class Manager : MonoBehaviour
 
         if (clickedButton == "")
         {
-            clickedButton = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
+            clickedButton = EventSystem.current.currentSelectedGameObject.name;
             Debug.Log(clickedButton);
         }
         else if (clickedButton2 == "")
         {
-            clickedButton2 = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
+            clickedButton2 = EventSystem.current.currentSelectedGameObject.name;
             Debug.Log(clickedButton2);
 
-            if (clickedButton == "Gold" && clickedButton2 == "Au")
+            if ((clickedButton == "Element1" && clickedButton2 == "Symbol1") || (clickedButton == "Symbol1" && clickedButton2 == "Element1"))
             {
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
             }
-            else if (clickedButton == "Hydrogen" && clickedButton2 == "H")
+            else if ((clickedButton == "Element2" && clickedButton2 == "Symbol2") || (clickedButton == "Symbol2" && clickedButton2 == "Element2"))
             {
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
             }
-            else if (clickedButton == "Titanium" && clickedButton2 == "Ti")
+            else if ((clickedButton == "Element3" && clickedButton2 == "Symbol3") || (clickedButton == "Symbol3" && clickedButton2 == "Element3"))
             {
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
             }
-            else if (clickedButton == "Carbon" && clickedButton2 == "C")
+            else if ((clickedButton == "Element4" && clickedButton2 == "Symbol4") || (clickedButton == "Symbol4" && clickedButton2 == "Element4"))
             {
                 Debug.Log("CORRECT");
                 clickedButton = "";
@@ -76,12 +85,12 @@ public class Manager : MonoBehaviour
                 clickedButton = "";
                 clickedButton2 = "";
             }
-
-
-        }
-
-
-
+        }   
 
     }
+
+
+
+
+    
 }
