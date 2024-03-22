@@ -29,6 +29,10 @@ public class Manager : MonoBehaviour
     public TextMeshProUGUI symbol3Text;
     public TextMeshProUGUI symbol4Text;
 
+    
+
+
+
     public void correctAnswer()
     {
         if (currentLevel + 1 != Levels.Length)
@@ -43,6 +47,70 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Vector3[] positionArray = new Vector3[8];
+        positionArray[0] = new Vector3(Random.Range(-756, -600), Random.Range(-357, 0), 0);
+        positionArray[1] = new Vector3(Random.Range(-500, -400), Random.Range(-357, 0), 0);
+        positionArray[2] = new Vector3(Random.Range(-300, -200), Random.Range(-357, 0), 0);
+        positionArray[3] = new Vector3(Random.Range(-100, -50), Random.Range(-357, 0), 0);
+        positionArray[4] = new Vector3(Random.Range(50, 100), Random.Range(-357, 0), 0);
+        positionArray[5] = new Vector3(Random.Range(200, 300), Random.Range(-357, 0), 0);
+        positionArray[6] = new Vector3(Random.Range(400, 500), Random.Range(-357, 0), 0);
+        positionArray[7] = new Vector3(Random.Range(600, 756), Random.Range(-357, 0), 0);
+
+        bool[] confirmationArray = new bool[positionArray.Length];
+        int randomLocation = Random.Range(0, 7);
+        confirmationArray[randomLocation] = true;
+        for (int i = 0; i<=7; i++)
+        {
+            if (i == 0)
+            {
+                element1.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 1)
+            {
+                element2.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 2)
+            {
+                element3.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 3)
+            {
+                element4.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 4)
+            {
+                symbol1.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 5)
+            {
+                symbol2.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 6)
+            {
+                symbol3.transform.localPosition = positionArray[randomLocation];
+
+            }
+            else if (i == 7)
+            {
+                symbol4.transform.localPosition = positionArray[randomLocation];
+            }
+            
+            
+            
+            while (confirmationArray[randomLocation] == true && i !=7)
+            {
+                randomLocation = Random.Range(0, positionArray.Length);
+            }
+            
+            confirmationArray[randomLocation] = true;
+        }
+           
+
+        
+
+
+        /*
         element1.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
         element2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
         element3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
@@ -51,7 +119,7 @@ public class Manager : MonoBehaviour
         symbol2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
         symbol3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
         symbol4.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-
+        */
     }
 
 
