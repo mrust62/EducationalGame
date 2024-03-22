@@ -11,11 +11,23 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayMars()
 	{
+		SceneManager.LoadSceneAsync(4);
+	}
+	public void PlayMars1()
+	{
 		SceneManager.LoadSceneAsync(2);
+	}
+	public void PlayMars2()
+	{
+		SceneManager.LoadSceneAsync(4);
+	}
+	public void PlayMars4()
+	{
+		SceneManager.LoadSceneAsync(4);
 	}
 	public void PlayVenus()
 	{
-		SceneManager.LoadSceneAsync(3);
+		SceneManager.LoadSceneAsync(4);
 	}
 	public void PlayEarth()
 	{
