@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 	{
 		SceneManager.LoadSceneAsync(5);
 	}
-	public void PlayMars4()
+	public void PlayMars3()
 	{
 		SceneManager.LoadSceneAsync(4);
 	}
