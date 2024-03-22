@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mars.unity
     guid: 1bf70872472728643ab7bd132344e0d9
+  - enabled: 1
+    path: Assets/Scenes/QuizGame 1.unity
+    guid: 3b07cf8612f3412449b3bbfdb61b55fa
   m_configObjects: {}

@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayMars2()
 	{
-		SceneManager.LoadSceneAsync(4);
+		SceneManager.LoadSceneAsync(5);
 	}
 	public void PlayMars4()
 	{
