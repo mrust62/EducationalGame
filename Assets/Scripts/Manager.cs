@@ -33,7 +33,14 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        element1.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        element2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        element3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        element4.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        symbol1.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        symbol2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        symbol3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+        symbol4.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
     }
 
 
