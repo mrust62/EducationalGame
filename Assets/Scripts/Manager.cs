@@ -58,23 +58,31 @@ public class Manager : MonoBehaviour
             if ((clickedButton == "Element1" && clickedButton2 == "Symbol1") || (clickedButton == "Symbol1" && clickedButton2 == "Element1"))
             {
                 Debug.Log("CORRECT");
+                element1.GetComponent<Image>().color = new Color(0, 255, 0);
+                symbol1.GetComponent<Image>().color = new Color(0, 255, 0);
                 clickedButton = "";
                 clickedButton2 = "";
             }
             else if ((clickedButton == "Element2" && clickedButton2 == "Symbol2") || (clickedButton == "Symbol2" && clickedButton2 == "Element2"))
             {
+                element2.GetComponent<Image>().color = new Color(0, 255, 0);
+                symbol2.GetComponent<Image>().color = new Color(0, 255, 0);
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
             }
             else if ((clickedButton == "Element3" && clickedButton2 == "Symbol3") || (clickedButton == "Symbol3" && clickedButton2 == "Element3"))
             {
+                element3.GetComponent<Image>().color = new Color(0, 255, 0);
+                symbol3.GetComponent<Image>().color = new Color(0, 255, 0);
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
             }
             else if ((clickedButton == "Element4" && clickedButton2 == "Symbol4") || (clickedButton == "Symbol4" && clickedButton2 == "Element4"))
             {
+                element4.GetComponent<Image>().color = new Color(0, 255, 0);
+                symbol4.GetComponent<Image>().color = new Color(0, 255, 0);
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
