@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class Manager : MonoBehaviour
 {
@@ -18,6 +19,15 @@ public class Manager : MonoBehaviour
     public Button symbol3;
     public Button element4;
     public Button symbol4;
+
+    public TextMeshProUGUI element1Text;
+    public TextMeshProUGUI element2Text;
+    public TextMeshProUGUI element3Text;
+    public TextMeshProUGUI element4Text;
+    public TextMeshProUGUI symbol1Text;
+    public TextMeshProUGUI symbol2Text;
+    public TextMeshProUGUI symbol3Text;
+    public TextMeshProUGUI symbol4Text;
 
     public void correctAnswer()
     {
@@ -41,12 +51,13 @@ public class Manager : MonoBehaviour
         symbol2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
         symbol3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
         symbol4.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
+
     }
 
 
     string clickedButton = "";
     string clickedButton2 = "";
-    
+
 
     //Checks if the elewment matches the atomic Symbol
     public void correctMatch()
@@ -65,34 +76,51 @@ public class Manager : MonoBehaviour
             if ((clickedButton == "Element1" && clickedButton2 == "Symbol1") || (clickedButton == "Symbol1" && clickedButton2 == "Element1"))
             {
                 Debug.Log("CORRECT");
-                element1.GetComponent<Image>().color = new Color(0, 255, 0);
-                symbol1.GetComponent<Image>().color = new Color(0, 255, 0);
                 clickedButton = "";
                 clickedButton2 = "";
+                Destroy(symbol1);
+                Destroy(symbol1.GetComponent<Image>());
+                Destroy(element1);
+                Destroy(element1.GetComponent<Image>());
+                element1Text.text = "";
+                symbol1Text.text = "";
             }
             else if ((clickedButton == "Element2" && clickedButton2 == "Symbol2") || (clickedButton == "Symbol2" && clickedButton2 == "Element2"))
             {
-                element2.GetComponent<Image>().color = new Color(0, 255, 0);
-                symbol2.GetComponent<Image>().color = new Color(0, 255, 0);
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
+                Destroy(symbol2);
+                Destroy(symbol2.GetComponent<Image>());
+                Destroy(element2);
+                Destroy(element2.GetComponent<Image>());
+                element2Text.text = "";
+                symbol2Text.text = "";
             }
             else if ((clickedButton == "Element3" && clickedButton2 == "Symbol3") || (clickedButton == "Symbol3" && clickedButton2 == "Element3"))
             {
-                element3.GetComponent<Image>().color = new Color(0, 255, 0);
-                symbol3.GetComponent<Image>().color = new Color(0, 255, 0);
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
+                Destroy(symbol3);
+                Destroy(symbol3.GetComponent<Image>());
+                Destroy(element3);
+                Destroy(element3.GetComponent<Image>());
+                element3Text.text = "";
+                symbol3Text.text = "";
+
             }
             else if ((clickedButton == "Element4" && clickedButton2 == "Symbol4") || (clickedButton == "Symbol4" && clickedButton2 == "Element4"))
             {
-                element4.GetComponent<Image>().color = new Color(0, 255, 0);
-                symbol4.GetComponent<Image>().color = new Color(0, 255, 0);
                 Debug.Log("CORRECT");
                 clickedButton = "";
                 clickedButton2 = "";
+                Destroy(symbol4);
+                Destroy(symbol4.GetComponent<Image>());
+                Destroy(element4);
+                Destroy(element4.GetComponent<Image>());
+                element4Text.text = "";
+                symbol4Text.text = "";
             }
             else
             {
@@ -100,12 +128,12 @@ public class Manager : MonoBehaviour
                 clickedButton = "";
                 clickedButton2 = "";
             }
-        }   
+        }
 
     }
 
 
 
 
-    
+
 }
