@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayMars3()
 	{
-		SceneManager.LoadSceneAsync(4);
+		SceneManager.LoadSceneAsync(6);
 	}
 	public void PlayVenus()
 	{
