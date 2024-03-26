@@ -31,6 +31,6 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayEarth()
 	{
-		SceneManager.LoadSceneAsync(4);
+		SceneManager.LoadSceneAsync(8);
 	}
 }
