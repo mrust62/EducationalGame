@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayVenus1()
 	{
-		SceneManager.LoadSceneAsync(7);
+		SceneManager.LoadSceneAsync(10);
 	}
 	public void PlayEarth()
 	{
@@ -39,6 +39,6 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayEarth1()
 	{
-		SceneManager.LoadSceneAsync(8);
+		SceneManager.LoadSceneAsync(9);
 	}
 }
