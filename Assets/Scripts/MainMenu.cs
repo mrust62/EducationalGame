@@ -27,9 +27,17 @@ public class MainMenu : MonoBehaviour
 	}
 	public void PlayVenus()
 	{
-		SceneManager.LoadSceneAsync(4);
+		SceneManager.LoadSceneAsync(7);
+	}
+	public void PlayVenus1()
+	{
+		SceneManager.LoadSceneAsync(7);
 	}
 	public void PlayEarth()
+	{
+		SceneManager.LoadSceneAsync(8);
+	}
+	public void PlayEarth1()
 	{
 		SceneManager.LoadSceneAsync(8);
 	}
