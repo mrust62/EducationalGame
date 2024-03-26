@@ -18,6 +18,14 @@ public class ReadSpreadsheet : MonoBehaviour
     public TextMeshProUGUI Symbol2;
     public TextMeshProUGUI Symbol3;
     public TextMeshProUGUI Symbol4;
+    public TextMeshProUGUI Number1;
+    public TextMeshProUGUI Number2;
+    public TextMeshProUGUI Number3;
+    public TextMeshProUGUI Number4;
+    public TextMeshProUGUI Mass1;
+    public TextMeshProUGUI Mass2;
+    public TextMeshProUGUI Mass3;
+    public TextMeshProUGUI Mass4;
 
     // Start is called before the first frame update
     void Start()
@@ -61,24 +69,32 @@ public class ReadSpreadsheet : MonoBehaviour
                 Debug.Log(random1 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
                 Name1.text = data.GetValue(i + 2).ToString();
                 Symbol1.text = data.GetValue(i + 1).ToString();
+                Number1.text = data.GetValue(i).ToString();
+                Mass1.text = data.GetValue(i + 3).ToString();
             } 
             else if (data.GetValue(i).Equals(random2.ToString()))
             {
                 Debug.Log(random2 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
                 Name2.text = data.GetValue(i + 2).ToString();
                 Symbol2.text = data.GetValue(i + 1).ToString();
+                Number2.text = data.GetValue(i).ToString();
+                Mass2.text = data.GetValue(i + 3).ToString();
             } 
             else if (data.GetValue(i).Equals(random3.ToString()))
             {
                 Debug.Log(random3 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
                 Name3.text = data.GetValue(i + 2).ToString();
                 Symbol3.text = data.GetValue(i + 1).ToString();
+                Number3.text = data.GetValue(i).ToString();
+                Mass3.text = data.GetValue(i + 3).ToString();
             }
             else if (data.GetValue(i).Equals(random4.ToString()))
             {
                 Debug.Log(random4 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
                 Name4.text = data.GetValue(i + 2).ToString();
                 Symbol4.text = data.GetValue(i + 1).ToString();
+                Number4.text = data.GetValue(i).ToString();
+                Mass4.text = data.GetValue(i + 3).ToString();
             }
         }
 
