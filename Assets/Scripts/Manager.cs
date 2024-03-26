@@ -135,11 +135,78 @@ public class Manager : MonoBehaviour
         {
             clickedButton = EventSystem.current.currentSelectedGameObject.name;
             Debug.Log(clickedButton);
+
+            if (clickedButton == "Element1")
+            {
+                element1.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Element2")
+            {
+                element2.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Element3")
+            {
+                element3.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Element4")
+            {
+                element4.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Symbol1")
+            {
+                symbol1.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Symbol2")
+            {
+                symbol2.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Symbol3")
+            {
+                symbol3.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton == "Symbol4")
+            {
+                symbol4.GetComponent<Outline>().enabled = true;
+            }
+
         }
         else if (clickedButton2 == "")
         {
             clickedButton2 = EventSystem.current.currentSelectedGameObject.name;
             Debug.Log(clickedButton2);
+
+            if (clickedButton2 == "Element1")
+            {
+                element1.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Element2")
+            {
+                element2.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Element3")
+            {
+                element3.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Element4")
+            {
+                element4.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Symbol1")
+            {
+                symbol1.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Symbol2")
+            {
+                symbol2.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Symbol3")
+            {
+                symbol3.GetComponent<Outline>().enabled = true;
+            }
+            else if (clickedButton2 == "Symbol4")
+            {
+                symbol4.GetComponent<Outline>().enabled = true;
+            }
 
             if ((clickedButton == "Element1" && clickedButton2 == "Symbol1") || (clickedButton == "Symbol1" && clickedButton2 == "Element1"))
             {
@@ -193,6 +260,40 @@ public class Manager : MonoBehaviour
             else
             {
                 Debug.Log("INCORRECT");
+
+                if (clickedButton == "Element1" || clickedButton2 == "Element1")
+                {
+                    element1.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Element2" || clickedButton2 == "Element2")
+                {
+                    element2.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Element3" || clickedButton2 == "Element3")
+                {
+                    element3.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Element4" || clickedButton2 == "Element4")
+                {
+                    element4.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Symbol1" || clickedButton2 == "Symbol1")
+                {
+                    symbol1.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Symbol2" || clickedButton2 == "Symbol2")
+                {
+                    symbol2.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Symbol3" || clickedButton2 == "Symbol3")
+                {
+                    symbol3.GetComponent<Outline>().enabled = false;
+                }
+                if (clickedButton == "Symbol4" || clickedButton2 == "Symbol4")
+                {
+                    symbol4.GetComponent<Outline>().enabled = false;
+                }
+
                 clickedButton = "";
                 clickedButton2 = "";
             }
