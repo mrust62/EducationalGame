@@ -186,6 +186,10 @@ MonoBehaviour:
   option2: {fileID: 1394265055}
   option3: {fileID: 790291667}
   option4: {fileID: 1845885046}
+  correctAnswer: {fileID: 687428362}
+  answer2: {fileID: 677735258}
+  answer3: {fileID: 312301476}
+  answer4: {fileID: 1760718538}
 --- !u!1 &262970125
 GameObject:
   m_ObjectHideFlags: 0
