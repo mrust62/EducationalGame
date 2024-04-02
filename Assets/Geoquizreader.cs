@@ -16,11 +16,53 @@ public class Geoquizreader : MonoBehaviour
     public TextMeshProUGUI option3;
     public TextMeshProUGUI option4;
 
+    public Button correctAnswer;
+    public Button answer2;
+    public Button answer3;
+    public Button answer4;
 
     // Start is called before the first frame update
     void Start()
     {
         getInfo();
+
+        Vector3[] positionArray = new Vector3[4];
+        positionArray[0] = new Vector3(Random.Range(-756, -400), Random.Range(-357, 150), 0);
+        positionArray[1] = new Vector3(Random.Range(-300, -50), Random.Range(-357, 150), 0);
+        positionArray[2] = new Vector3(Random.Range(50, 300), Random.Range(-357, 0), 0);
+        positionArray[3] = new Vector3(Random.Range(400, 756), Random.Range(-357, 0), 0);
+
+
+        bool[] confirmationArray = new bool[positionArray.Length];
+        int randomLocation = Random.Range(0, 3);
+        confirmationArray[randomLocation] = true;
+        for (int i = 0; i <= 3; i++)
+        {
+            if (i == 0)
+            {
+                correctAnswer.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 1)
+            {
+                answer2.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 2)
+            {
+                answer3.transform.localPosition = positionArray[randomLocation];
+            }
+            else if (i == 3)
+            {
+                answer4.transform.localPosition = positionArray[randomLocation];
+            }
+
+
+            while (confirmationArray[randomLocation] == true && i != 3)
+            {
+                randomLocation = Random.Range(0, positionArray.Length);
+            }
+
+            confirmationArray[randomLocation] = true;
+        }
     }
 
     // Update is called once per frame
