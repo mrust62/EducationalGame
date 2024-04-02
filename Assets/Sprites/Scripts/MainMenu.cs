@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-	public void PlayGame()
+    
+    public void PlayGame()
 	{
 		SceneManager.LoadSceneAsync(1);
 	}
@@ -20,7 +21,8 @@ public class MainMenu : MonoBehaviour
 	public void PlayMars2()
 	{
 		SceneManager.LoadSceneAsync(5);
-	}
+        BGmusic.instance.GetComponent<AudioSource>().Stop();
+    }
 	public void PlayMars3()
 	{
 		SceneManager.LoadSceneAsync(6);
@@ -40,5 +42,6 @@ public class MainMenu : MonoBehaviour
 	public void PlayEarth1()
 	{
 		SceneManager.LoadSceneAsync(9);
-	}
+    }
+
 }
