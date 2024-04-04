@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Geoquizreader : MonoBehaviour
 {
@@ -96,5 +98,6 @@ public class Geoquizreader : MonoBehaviour
     public void checkAnswer()
     {
         Debug.Log("CORRECT");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
