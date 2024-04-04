@@ -91,22 +91,10 @@ public class Geoquizreader : MonoBehaviour
         option3.text = data.GetValue(random1 + 3).ToString();
         option4.text = data.GetValue(random1 + 4).ToString();
 
-        /*
-        for (int i = 0; i < data.Length; i++)
-        {
-            
-            if (i == random1)
-            {
-                Debug.Log(random1 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
-                question.text = data.GetValue(i).ToString();
-                correctOption.text = data.GetValue(i + 1).ToString();
-                option2.text = data.GetValue(i + 2).ToString();
-                option3.text = data.GetValue(i + 3).ToString();
-                option4.text = data.GetValue(i + 4).ToString();
-            }
-            
-            
-        }
-        */
+    }
+
+    public void checkAnswer()
+    {
+        Debug.Log("CORRECT");
     }
 }
