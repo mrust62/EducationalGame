@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GeoGame.unity
     guid: 0041ca320b0cd874495a0dbaa668be22
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 7d919fc4f7a5e9f4baa42cd2b1a3f513
   m_configObjects: {}
