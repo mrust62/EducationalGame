@@ -225,7 +225,7 @@ public class Manager : MonoBehaviour
                 }
                 if (numbRounds == 3)
                 {
-                    SceneManager.LoadSceneAsync(1);
+                    SceneManager.LoadSceneAsync(11);
                     numbRounds = 0;
                 }
 
@@ -252,7 +252,7 @@ public class Manager : MonoBehaviour
                 }
                 if (numbRounds == 3)
                 {
-                    SceneManager.LoadSceneAsync(1);
+                    SceneManager.LoadSceneAsync(11);
                     Debug.Log("3 ROUNDS");
                     numbRounds = 0;
                 }
@@ -280,7 +280,7 @@ public class Manager : MonoBehaviour
                 }
                 if (numbRounds == 3)
                 {
-                    SceneManager.LoadSceneAsync(1);
+                    SceneManager.LoadSceneAsync(11);
                     Debug.Log("3 ROUNDS");
                     numbRounds = 0;
                 }
@@ -308,7 +308,7 @@ public class Manager : MonoBehaviour
                 }
                 if (numbRounds == 3)
                 {
-                    SceneManager.LoadSceneAsync(1);
+                    SceneManager.LoadSceneAsync(11);
                     Debug.Log("3 ROUNDS");
                     numbRounds = 0;
                 }
