@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MultipleChoiceSpreadsheetReader : MonoBehaviour
 {
@@ -100,5 +101,6 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     public void checkAnswer()
     {
         Debug.Log("CORRECT");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
