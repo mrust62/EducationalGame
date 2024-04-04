@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class Manager : MonoBehaviour
     public TextMeshProUGUI symbol4Text;
 
     
-
+    
 
 
     public void correctAnswer()
@@ -105,37 +106,25 @@ public class Manager : MonoBehaviour
             
             confirmationArray[randomLocation] = true;
         }
-           
-
-        
-
-
-        /*
-        element1.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        element2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        element3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        element4.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        symbol1.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        symbol2.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        symbol3.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        symbol4.transform.localPosition = new Vector3(Random.Range(-822, 822), Random.Range(-484, 0), 0);
-        */
+         
     }
 
 
     string clickedButton = "";
     string clickedButton2 = "";
 
+    int numbCorrect = 0;
+    static int numbRounds = 0;
 
     //Checks if the elewment matches the atomic Symbol
     public void correctMatch()
     {
+        
 
         if (clickedButton == "")
         {
             clickedButton = EventSystem.current.currentSelectedGameObject.name;
-            Debug.Log(clickedButton);
-
+            
             if (clickedButton == "Element1")
             {
                 element1.GetComponent<Outline>().enabled = true;
@@ -173,8 +162,7 @@ public class Manager : MonoBehaviour
         else if (clickedButton2 == "")
         {
             clickedButton2 = EventSystem.current.currentSelectedGameObject.name;
-            Debug.Log(clickedButton2);
-
+            
             if (clickedButton2 == "Element1")
             {
                 element1.GetComponent<Outline>().enabled = true;
@@ -208,9 +196,16 @@ public class Manager : MonoBehaviour
                 symbol4.GetComponent<Outline>().enabled = true;
             }
 
+
+
+            
+
+
+
+
             if ((clickedButton == "Element1" && clickedButton2 == "Symbol1") || (clickedButton == "Symbol1" && clickedButton2 == "Element1"))
             {
-                Debug.Log("CORRECT");
+                
                 clickedButton = "";
                 clickedButton2 = "";
                 Destroy(symbol1);
@@ -219,10 +214,25 @@ public class Manager : MonoBehaviour
                 Destroy(element1.GetComponent<Image>());
                 element1Text.text = "";
                 symbol1Text.text = "";
+
+                numbCorrect+=1;
+                if (numbCorrect == 4)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    numbRounds+=1;
+                    numbCorrect = 0;
+                    
+                }
+                if (numbRounds == 3)
+                {
+                    SceneManager.LoadSceneAsync(1);
+                    numbRounds = 0;
+                }
+
             }
             else if ((clickedButton == "Element2" && clickedButton2 == "Symbol2") || (clickedButton == "Symbol2" && clickedButton2 == "Element2"))
             {
-                Debug.Log("CORRECT");
+                
                 clickedButton = "";
                 clickedButton2 = "";
                 Destroy(symbol2);
@@ -231,10 +241,26 @@ public class Manager : MonoBehaviour
                 Destroy(element2.GetComponent<Image>());
                 element2Text.text = "";
                 symbol2Text.text = "";
+
+                numbCorrect+=1;
+                if (numbCorrect == 4)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    numbRounds+=1;
+                    numbCorrect = 0;
+                    
+                }
+                if (numbRounds == 3)
+                {
+                    SceneManager.LoadSceneAsync(1);
+                    Debug.Log("3 ROUNDS");
+                    numbRounds = 0;
+                }
+
             }
             else if ((clickedButton == "Element3" && clickedButton2 == "Symbol3") || (clickedButton == "Symbol3" && clickedButton2 == "Element3"))
             {
-                Debug.Log("CORRECT");
+                
                 clickedButton = "";
                 clickedButton2 = "";
                 Destroy(symbol3);
@@ -244,10 +270,25 @@ public class Manager : MonoBehaviour
                 element3Text.text = "";
                 symbol3Text.text = "";
 
+                numbCorrect+=1;
+                if (numbCorrect == 4)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    numbRounds+=1;
+                    numbCorrect = 0;
+                    
+                }
+                if (numbRounds == 3)
+                {
+                    SceneManager.LoadSceneAsync(1);
+                    Debug.Log("3 ROUNDS");
+                    numbRounds = 0;
+                }
+
             }
             else if ((clickedButton == "Element4" && clickedButton2 == "Symbol4") || (clickedButton == "Symbol4" && clickedButton2 == "Element4"))
             {
-                Debug.Log("CORRECT");
+                
                 clickedButton = "";
                 clickedButton2 = "";
                 Destroy(symbol4);
@@ -256,11 +297,26 @@ public class Manager : MonoBehaviour
                 Destroy(element4.GetComponent<Image>());
                 element4Text.text = "";
                 symbol4Text.text = "";
+
+                numbCorrect+=1;
+                if (numbCorrect == 4)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    numbRounds+=1;
+                    numbCorrect = 0;
+                    
+                }
+                if (numbRounds == 3)
+                {
+                    SceneManager.LoadSceneAsync(1);
+                    Debug.Log("3 ROUNDS");
+                    numbRounds = 0;
+                }
+
             }
             else
             {
-                Debug.Log("INCORRECT");
-
+                
                 if (clickedButton == "Element1" || clickedButton2 == "Element1")
                 {
                     element1.GetComponent<Outline>().enabled = false;
@@ -297,6 +353,7 @@ public class Manager : MonoBehaviour
                 clickedButton = "";
                 clickedButton2 = "";
             }
+            
         }
 
     }

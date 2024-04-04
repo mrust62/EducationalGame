@@ -58,7 +58,7 @@ public class ReadSpreadsheet : MonoBehaviour
             random2 = Random.Range(1, 118);
             random3 = Random.Range(1, 118);
             random4 = Random.Range(1, 118);
-            Debug.Log("RESET");
+            
         }
 
         //sets the buttons and text to the correct values
@@ -66,7 +66,7 @@ public class ReadSpreadsheet : MonoBehaviour
         {
             if (data.GetValue(i).Equals(random1.ToString()))
             {
-                Debug.Log(random1 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
+                
                 Name1.text = data.GetValue(i + 2).ToString();
                 Symbol1.text = data.GetValue(i + 1).ToString();
                 Number1.text = data.GetValue(i).ToString();
@@ -74,7 +74,7 @@ public class ReadSpreadsheet : MonoBehaviour
             } 
             else if (data.GetValue(i).Equals(random2.ToString()))
             {
-                Debug.Log(random2 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
+                
                 Name2.text = data.GetValue(i + 2).ToString();
                 Symbol2.text = data.GetValue(i + 1).ToString();
                 Number2.text = data.GetValue(i).ToString();
@@ -82,7 +82,7 @@ public class ReadSpreadsheet : MonoBehaviour
             } 
             else if (data.GetValue(i).Equals(random3.ToString()))
             {
-                Debug.Log(random3 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
+                
                 Name3.text = data.GetValue(i + 2).ToString();
                 Symbol3.text = data.GetValue(i + 1).ToString();
                 Number3.text = data.GetValue(i).ToString();
@@ -90,7 +90,7 @@ public class ReadSpreadsheet : MonoBehaviour
             }
             else if (data.GetValue(i).Equals(random4.ToString()))
             {
-                Debug.Log(random4 + " " + data.GetValue(i + 2) + " " + data.GetValue(i + 1) + " " + data.GetValue(i + 3));
+                
                 Name4.text = data.GetValue(i + 2).ToString();
                 Symbol4.text = data.GetValue(i + 1).ToString();
                 Number4.text = data.GetValue(i).ToString();
