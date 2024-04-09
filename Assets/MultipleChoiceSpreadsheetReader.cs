@@ -17,6 +17,7 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     public TextMeshProUGUI option2;
     public TextMeshProUGUI option3;
     public TextMeshProUGUI option4;
+    public TextMeshProUGUI score;
 
     public Button correctAnswer;
     public Button answer2;
@@ -24,11 +25,13 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     public Button answer4;
 
 
+    static int numbCorrect = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         getInfo();
+        score.text = numbCorrect.ToString();
 
         Vector3[] positionArray = new Vector3[4];
         positionArray[0] = new Vector3(Random.Range(-756, -400), Random.Range(-357, 150), 0);
@@ -98,9 +101,16 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
 
     }
 
+    
+
     public void checkAnswer()
     {
-        Debug.Log("CORRECT");
+        numbCorrect += 1;
+        Debug.Log("CORRECT: " + numbCorrect);
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
     }
+
+    
 }

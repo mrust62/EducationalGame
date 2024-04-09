@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class TimerScript : MonoBehaviour
 {
 
-    public float timeLeft;
+    public static float timeLeft = 30;
     public bool timerOn = false;
 
     public TextMeshProUGUI timerText;

@@ -40,7 +40,6 @@ public class Manager : MonoBehaviour
         {
             Levels[currentLevel].SetActive(false);
 
-
         }
     }
 
