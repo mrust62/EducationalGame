@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class TimerScript : MonoBehaviour
                 Debug.Log("Time is up");
                 timeLeft = 0;
                 timerOn = false;
+                SceneManager.LoadSceneAsync(11);
             }
         }
     }
