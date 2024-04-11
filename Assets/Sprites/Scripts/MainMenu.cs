@@ -43,5 +43,16 @@ public class MainMenu : MonoBehaviour
 	{
 		SceneManager.LoadSceneAsync(9);
     }
-
+	public void Playmars11()
+	{
+		SceneManager.LoadSceneAsync(12);
+    }
+	public void Playmars21()
+	{
+		SceneManager.LoadSceneAsync(13);
+    }
+	public void Playmars31()
+	{
+		SceneManager.LoadSceneAsync(14);
+    }
 }
