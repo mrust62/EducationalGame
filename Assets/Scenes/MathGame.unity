@@ -406,7 +406,6 @@ GameObject:
   - component: {fileID: 180903976}
   - component: {fileID: 180903979}
   - component: {fileID: 180903978}
-  - component: {fileID: 180903977}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -433,22 +432,6 @@ RectTransform:
   m_AnchoredPosition: {x: -773, y: -485.38}
   m_SizeDelta: {x: 157.8779, y: 58.753}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &180903977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180903975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ed5e7868bf3e6b4fa6de470b35c8932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerOn: 0
-  timerText: {fileID: 180903978}
-  Planet: {fileID: 0}
-  Victory: {fileID: 0}
 --- !u!114 &180903978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,6 +1467,7 @@ MonoBehaviour:
   answer2: {fileID: 469547402}
   answer3: {fileID: 1954932763}
   answer4: {fileID: 1143509005}
+  scoreReset: 0
 --- !u!114 &839410809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,7 +1508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerOn: 0
-  timerText: {fileID: 0}
+  resetScore: 0
+  timerText: {fileID: 180903978}
   Planet: {fileID: 493929068}
   Victory: {fileID: 1002511236}
 --- !u!1 &868650461

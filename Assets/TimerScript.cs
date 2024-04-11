@@ -11,16 +11,19 @@ public class TimerScript : MonoBehaviour
 
     public static float timeLeft = 30;
     public bool timerOn = false;
+    public bool resetScore = false;
 
     public TextMeshProUGUI timerText;
     public GameObject Planet; 
     public GameObject Victory;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
         timerOn = true;
+        resetScore = false;
     }
 
     // Update is called once per frame
@@ -38,9 +41,10 @@ public class TimerScript : MonoBehaviour
                 Debug.Log("Time is up");
                 timeLeft = 30;
                 timerOn = false;
-                //SceneManager.LoadSceneAsync(11);
+                
                 Planet.SetActive(false);
                 Victory.SetActive(true);
+                resetScore = true;
                 
             }
         }

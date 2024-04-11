@@ -25,6 +25,8 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     public Button answer3;
     public Button answer4;
 
+    
+    TimerScript timerScript;
 
     static int numbCorrect = 0;
 
@@ -78,7 +80,12 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timerScript = GetComponent<TimerScript>();
         
+        if (timerScript.resetScore)
+        {
+            numbCorrect = 0;
+        }
     }
 
 
