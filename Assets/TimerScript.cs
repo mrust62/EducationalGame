@@ -34,9 +34,10 @@ public class TimerScript : MonoBehaviour
             else
             {
                 Debug.Log("Time is up");
-                timeLeft = 0;
+                timeLeft = 30;
                 timerOn = false;
                 SceneManager.LoadSceneAsync(11);
+                
             }
         }
     }
