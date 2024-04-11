@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      geo planet extended_0: -8828991711778643384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

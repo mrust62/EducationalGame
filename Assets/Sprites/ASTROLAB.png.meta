@@ -335,7 +335,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ASTROLAB_0: 4986849268964722108
+      ASTROLAB_1: -3891321389997721164
+      ASTROLAB_2: 4309026793228539951
+      ASTROLAB_3: -8964999920539039285
+      ASTROLAB_4: -2266383488114515263
+      ASTROLAB_5: -1127343819175056539
+      ASTROLAB_6: -2391612927205091245
+      ASTROLAB_7: 6937526851051894621
+      ASTROLAB_8: 1407117179474193024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
