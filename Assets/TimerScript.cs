@@ -13,6 +13,8 @@ public class TimerScript : MonoBehaviour
     public bool timerOn = false;
 
     public TextMeshProUGUI timerText;
+    public GameObject Planet; 
+    public GameObject Victory;
 
 
     // Start is called before the first frame update
@@ -36,7 +38,9 @@ public class TimerScript : MonoBehaviour
                 Debug.Log("Time is up");
                 timeLeft = 30;
                 timerOn = false;
-                SceneManager.LoadSceneAsync(11);
+                //SceneManager.LoadSceneAsync(11);
+                Planet.SetActive(false);
+                Victory.SetActive(true);
                 
             }
         }

@@ -18,6 +18,7 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     public TextMeshProUGUI option3;
     public TextMeshProUGUI option4;
     public TextMeshProUGUI score;
+    public TextMeshProUGUI scorevictory;
 
     public Button correctAnswer;
     public Button answer2;
@@ -32,6 +33,7 @@ public class MultipleChoiceSpreadsheetReader : MonoBehaviour
     {
         getInfo();
         score.text = numbCorrect.ToString();
+        scorevictory.text = numbCorrect.ToString();
 
         Vector3[] positionArray = new Vector3[4];
         positionArray[0] = new Vector3(Random.Range(-756, -400), Random.Range(-357, 150), 0);
