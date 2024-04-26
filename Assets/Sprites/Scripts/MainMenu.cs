@@ -55,4 +55,12 @@ public class MainMenu : MonoBehaviour
 	{
 		SceneManager.LoadSceneAsync(14);
     }
+	public void Playcredits()
+	{
+		SceneManager.LoadSceneAsync(15);
+    }
+	public void Playstart()
+	{
+		SceneManager.LoadSceneAsync(0);
+    }
 }
