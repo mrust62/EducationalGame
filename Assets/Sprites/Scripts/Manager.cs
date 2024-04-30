@@ -48,14 +48,14 @@ public class Manager : MonoBehaviour
     void Start()
     {
         Vector3[] positionArray = new Vector3[8];
-        positionArray[0] = new Vector3(Random.Range(-756, -600), Random.Range(-357, 0), 0);
-        positionArray[1] = new Vector3(Random.Range(-500, -400), Random.Range(-357, 0), 0);
-        positionArray[2] = new Vector3(Random.Range(-300, -200), Random.Range(-357, 0), 0);
-        positionArray[3] = new Vector3(Random.Range(-100, -50), Random.Range(-357, 0), 0);
-        positionArray[4] = new Vector3(Random.Range(50, 100), Random.Range(-357, 0), 0);
-        positionArray[5] = new Vector3(Random.Range(200, 300), Random.Range(-357, 0), 0);
-        positionArray[6] = new Vector3(Random.Range(400, 500), Random.Range(-357, 0), 0);
-        positionArray[7] = new Vector3(Random.Range(600, 756), Random.Range(-357, 0), 0);
+        positionArray[0] = new Vector3(Random.Range(-850, -750), Random.Range(-322, 0), 0);
+        positionArray[1] = new Vector3(Random.Range(-600, -500), Random.Range(-322, 0), 0);
+        positionArray[2] = new Vector3(Random.Range(-350, -275), Random.Range(-322, 0), 0);
+        positionArray[3] = new Vector3(Random.Range(-125, -55), Random.Range(-322, 0), 0);
+        positionArray[4] = new Vector3(Random.Range(55, 125), Random.Range(-322, 0), 0);
+        positionArray[5] = new Vector3(Random.Range(275, 350), Random.Range(-322, 0), 0);
+        positionArray[6] = new Vector3(Random.Range(500, 600), Random.Range(-322, 0), 0);
+        positionArray[7] = new Vector3(Random.Range(750, 850), Random.Range(-322, 0), 0);
 
         bool[] confirmationArray = new bool[positionArray.Length];
         int randomLocation = Random.Range(0, 7);
