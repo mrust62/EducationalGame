@@ -1293,9 +1293,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Matthew Rust : Lead Programmer \nJungHwan (Jason) Son : Level Designer,
     Programmer\nKyle Graham : Animation, Programmer\nYounSung Eum : Web Programmer\nBri
-    Baehl : VFX\nMiranda Yount : VFX\nTJ  Freeby : VFX \nOlivia Olin : VFX\nJack
-    Myers : UX Design\nBrandon Hoke : Animation \nStephen Starsiak : Animation\nMars
-    Carlson : Animation \nMatt Fletcher : Animation "
+    Baehl : Co-Project Manager, VFX\nOlivia Olin : Co-Project Manager, VFX\nMiranda
+    Yount : VFX\nTJ  Freeby : VFX \nJack Myers : UX Design\nBrandon Hoke : 2D Art,
+    Asset Creation\nStephen Starsiak : 2D Art, Asset Creation\nMars Carlson : 2D
+    Art, Asset Creation \nMatt Fletcher : 2D Art , Asset Creation"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f2594213e324644da5cc9a291b6a764, type: 2}
   m_sharedMaterial: {fileID: -3528940454092715032, guid: 9f2594213e324644da5cc9a291b6a764, type: 2}
