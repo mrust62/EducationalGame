@@ -38,10 +38,10 @@ public class Geoquizreader : MonoBehaviour
         scorevictory.text = numbCorrect.ToString();
 
         Vector3[] positionArray = new Vector3[4];
-        positionArray[0] = new Vector3(Random.Range(-756, -400), Random.Range(-357, 150), 0);
-        positionArray[1] = new Vector3(Random.Range(-300, -50), Random.Range(-357, 150), 0);
-        positionArray[2] = new Vector3(Random.Range(50, 300), Random.Range(-357, 0), 0);
-        positionArray[3] = new Vector3(Random.Range(400, 756), Random.Range(-357, 0), 0);
+        positionArray[0] = new Vector3(Random.Range(-756, -500), Random.Range(-300, 150), 0);
+        positionArray[1] = new Vector3(Random.Range(-300, -150), Random.Range(-300, 150), 0);
+        positionArray[2] = new Vector3(Random.Range(150, 300), Random.Range(-300, 0), 0);
+        positionArray[3] = new Vector3(Random.Range(500, 756), Random.Range(-300, 0), 0);
 
 
         bool[] confirmationArray = new bool[positionArray.Length];
