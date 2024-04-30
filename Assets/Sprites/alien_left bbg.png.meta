@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_left bbg_0: -1919317023360408897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
