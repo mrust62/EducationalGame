@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class TimerScript : MonoBehaviour
 {
 
-    public static float timeLeft = 30;
+    public static float timeLeft = 300;
     public bool timerOn = false;
     public bool resetScore = false;
 
@@ -39,7 +39,7 @@ public class TimerScript : MonoBehaviour
             else
             {
                 Debug.Log("Time is up");
-                timeLeft = 30;
+                timeLeft = 300;
                 timerOn = false;
                 
                 Planet.SetActive(false);
