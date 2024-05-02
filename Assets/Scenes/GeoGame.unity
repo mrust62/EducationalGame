@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 92106191}
   - component: {fileID: 92106188}
   - component: {fileID: 92106192}
+  - component: {fileID: 92106193}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -281,6 +282,21 @@ MonoBehaviour:
   timerText: {fileID: 885516781}
   Planet: {fileID: 1929284175}
   Victory: {fileID: 2056171981}
+--- !u!114 &92106193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92106187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6d71b3d6f8c804995e60bf25a7883e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wrongAnswer1: {fileID: 677735258}
+  wrongAnswer2: {fileID: 312301476}
+  wrongAnswer3: {fileID: 1760718538}
 --- !u!1 &164633423
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +636,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 92106193}
+        m_TargetAssemblyTypeName: WrongAnswer, Assembly-CSharp
+        m_MethodName: highlightWrong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &312301477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,7 +871,7 @@ GameObject:
   - component: {fileID: 677735261}
   - component: {fileID: 677735262}
   m_Layer: 5
-  m_Name: optionButton2
+  m_Name: option2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,6 +948,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 92106193}
+        m_TargetAssemblyTypeName: WrongAnswer, Assembly-CSharp
+        m_MethodName: highlightWrong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2979,6 +3019,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 92106193}
+        m_TargetAssemblyTypeName: WrongAnswer, Assembly-CSharp
+        m_MethodName: highlightWrong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
