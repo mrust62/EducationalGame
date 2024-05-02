@@ -429,8 +429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -929, y: -485.38}
-  m_SizeDelta: {x: 157.8779, y: 58.753}
+  m_AnchoredPosition: {x: -972, y: -498}
+  m_SizeDelta: {x: 166.257, y: 83.996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &180903978
 MonoBehaviour:
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.6
+  m_fontSize: 65.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -567,8 +567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -824.68, y: -462}
-  m_SizeDelta: {x: 261.2407, y: 38.382}
+  m_AnchoredPosition: {x: -838, y: -468.58585}
+  m_SizeDelta: {x: 367.372, y: 69.104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320928340
 MonoBehaviour:
@@ -617,10 +617,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.35
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1845,8 +1845,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.467, y: 486.201}
-  m_SizeDelta: {x: 1646.65, y: 56.582}
+  m_AnchoredPosition: {x: 7.656, y: 458.272}
+  m_SizeDelta: {x: 1655.029, y: 112.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &988171816
 CanvasRenderer:
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.55
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2271,8 +2271,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 829, y: -485.38}
-  m_SizeDelta: {x: 291.7806, y: 58.7521}
+  m_AnchoredPosition: {x: 856.93, y: -487.01}
+  m_SizeDelta: {x: 369.982, y: 105.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162463140
 MonoBehaviour:
@@ -3534,7 +3534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2930dd3327dd65645a6ccab2c8f17847, type: 3}
+  m_Sprite: {fileID: 3554357063280691900, guid: a87ed740e830e54468ad3153eb3c9878, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3636,10 +3636,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 72
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -3726,11 +3726,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2675820197962717592, guid: 929d6da1e356cac4e9291e1da691e338, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 204.5364
+      value: 238.051
       objectReference: {fileID: 0}
     - target: {fileID: 2675820197962717592, guid: 929d6da1e356cac4e9291e1da691e338, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 49.996
+      value: 80.724
       objectReference: {fileID: 0}
     - target: {fileID: 2675820197962717592, guid: 929d6da1e356cac4e9291e1da691e338, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3762,11 +3762,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2675820197962717592, guid: 929d6da1e356cac4e9291e1da691e338, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -714
+      value: -708
       objectReference: {fileID: 0}
     - target: {fileID: 2675820197962717592, guid: 929d6da1e356cac4e9291e1da691e338, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -489.76
+      value: -499.64
       objectReference: {fileID: 0}
     - target: {fileID: 2675820197962717592, guid: 929d6da1e356cac4e9291e1da691e338, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

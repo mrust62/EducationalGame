@@ -503,7 +503,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PixelPlanets_Logo_0: -4974958932145451966
+      PixelPlanets_Logo_1: -207549645109971501
+      PixelPlanets_Logo_10: -1603282469843645961
+      PixelPlanets_Logo_11: 860265517540653944
+      PixelPlanets_Logo_12: 6274364684481552341
+      PixelPlanets_Logo_13: -1476367844057254111
+      PixelPlanets_Logo_14: 8167610166575495804
+      PixelPlanets_Logo_15: 2891968158944155323
+      PixelPlanets_Logo_2: 6182435114057354553
+      PixelPlanets_Logo_3: 187360384395448781
+      PixelPlanets_Logo_4: -6749393937397200060
+      PixelPlanets_Logo_5: 4453554040375727113
+      PixelPlanets_Logo_6: -665291415815546401
+      PixelPlanets_Logo_7: 391938502468936486
+      PixelPlanets_Logo_8: -1368581667010218524
+      PixelPlanets_Logo_9: -61577576242860044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
